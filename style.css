@@ -1,15 +1,23 @@
-body {
-  background-color: hsl(197, 28%, 97%);
-  color: hsl(0, 1%, 43%);
-  font-family: "Roboto", sans-serif;
+:root {
+  --base-color: hsl(227, 16%, 48%);
+  --analogous-accent-color: hsl(212, 24%, 54%);
+  --analogous-theme-color: hsl(224, 22%, 90%);
+  --analogous-link-color: hsl(260deg 21% 46%);
+  --main-text-color: hsl(227deg 16% 43%);
+  --heading-text-color: hsl(227deg 16% 36%);
+}
 
+body {
+  background-color: var(--analogous-theme-color);
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
-h1 strong,
+
 h2,
 h3,
 h4 {
-  color: hsl(0deg 0% 32%);
+  color: var(--heading-text-color);
 }
 
 h1 {
@@ -38,16 +46,18 @@ p {
   line-height: 1.5;
 }
 p.quotation-source {
-  color: hsl(0deg 0% 32%);
+  color: var(--heading-text-color);
 }
 
 nav {
   display: flex;
   align-items: center;
+  color: hsl(0, 0%, 100%);
   justify-content: space-between;
   position: fixed;
   top: 0;
-  background-color: hsl(0, 0%, 100%);
+
+  background-color: var(--base-color);
   width: 100%;
 }
 nav.desktop-display {
@@ -83,11 +93,11 @@ li {
   margin-right: 16px;
 }
 a {
-  color: hsl(0deg 0% 32%);
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
 a:visited {
-  color: hsl(0deg 0% 32%);
+  color: hsl(0, 0%, 100%);
 }
 a:hover {
   text-decoration: underline;
@@ -109,22 +119,32 @@ main {
   margin-top: 64px;
 }
 .section-banner {
-  background-color: hsl(197, 0%, 83%);
+  background-color: hsl(0, 0%, 100%);
 }
 .section-banner p {
-  color: hsl(0deg 0% 32%);
+  color: var(--heading-text-color);
   font-size: 25px;
   font-weight: 500;
   max-width: 80%;
   margin: 24px 0;
 }
 .section-courses {
-  background-color: hsl(197, 5%, 91%);
+  background-color: hsl(0, 0%, 100%);
   padding: 0 72px 32px 72px;
 }
 .section-courses .course-card {
   background-color: hsl(0, 0%, 100%);
+  background-color: var(--base-color);
+  color: hsl(0, 0%, 100%);
 }
+.section-courses .course-card:hover {
+  background-color: var(--analogous-accent-color);
+  transition: all 275ms ease-in-out;
+}
+.section-courses .course-card h4 {
+  color: hsl(0, 0%, 100%);
+}
+
 .section-courses .course-card-text {
   margin: 16px 16px 24px 16px;
 }
@@ -155,7 +175,7 @@ main {
 }
 
 button {
-  background-color: hsl(0deg 1% 27%);
+  background-color: var(--base-color);
   border: none;
   padding: 8px 0;
   width: 80%;
@@ -170,25 +190,32 @@ button a:visited {
 button a:hover {
   text-decoration: none;
 }
+button a:active,
+button:active {
+  transform: translate(1px, 1px);
+}
+
 .sidebar-item {
   display: flex;
   align-items: center;
 }
 .sidebar-item:hover {
-  background-color: hsl(0deg 0% 83%);
+  background-color: hsl(0, 0%, 100%);
+  transition: all 275ms ease-in-out;
 }
 .sidebar-item a {
-  color: hsl(200deg 99% 34%);
+  color: var(--analogous-link-color);
 }
 .sidebar-item a:visited {
-  color: hsl(200deg 99% 34%);
+  color: var(--analogous-link-color);
 }
 .sidebar-item a:hover {
-  color: hsl(201deg 97% 29%);
+  color: var(--analogous-link-color);
   text-decoration: underline;
+  transition: all 100ms ease-in-out;
 }
 .sidebar-item a:active {
-  color: hsl(201deg 97% 29%);
+  color: var(--analogous-link-color);
   font-weight: bold;
 }
 .sidebar-item-image {
@@ -206,8 +233,13 @@ button a:hover {
   gap: 32px 32px;
   margin-top: 32px;
 }
+footer,
+.attribution {
+  background-color: var(--base-color);
+}
 footer {
-  border-top: 1px solid hsl(0, 0%, 83%);
+  border-top: 1px solid var(--analogous-theme-color);
+  color: hsl(0, 0%, 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -220,9 +252,13 @@ footer p {
 footer a {
   font-size: 16px;
 }
-small {
-  padding-top: 16px;
-  padding-bottom: 32px;
+.attribution {
+  border-top: 1px solid var(--analogous-theme-color);
+  color: hsl(0, 0%, 100%);
+  padding: 16px 0;
+}
+.attribution a,
+.attribution p {
   font-size: 16px;
 }
 
@@ -275,9 +311,13 @@ small {
     display: block;
   }
   div.mobile-display h4 {
-    background-color: hsl(0, 0%, 83%);
+    background-color: var(--base-color);
+    color: hsl(0, 0%, 100%);
     margin-bottom: 8px;
     padding: 16px 24px;
+  }
+  div.mobile-display h4:hover {
+    background-color: var(--analogous-accent-color);
   }
   .section-courses {
     background-color: hsl(0, 0%, 100%);
