@@ -111,9 +111,11 @@ h1 a:hover {
 }
 img,
 video {
+  border-radius: 2px;
   height: auto;
   max-width: 100%;
 }
+
 .mobile-display {
   display: none;
 }
@@ -139,6 +141,7 @@ main {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--base-color);
   color: hsl(0, 0%, 100%);
+  border-radius: 2px;
 }
 .section-courses .course-card:hover {
   background-color: var(--analogous-accent-color);
@@ -180,6 +183,7 @@ main {
 button {
   background-color: var(--base-color);
   border: none;
+  border-radius: 2px;
   padding: 8px 0;
   width: 80%;
 }
@@ -192,6 +196,9 @@ button a:visited {
 }
 button a:hover {
   text-decoration: none;
+}
+button:hover {
+  background-color: var(--analogous-accent-color);
 }
 button a:active,
 button:active {
@@ -288,6 +295,11 @@ footer a {
     justify-content: space-evenly;
     width: 100%;
   }
+  nav.mobile-display img {
+    height: 37px;
+    width: 37px;
+  }
+
   .section-banner div.subsection-one {
     margin-bottom: 0;
   }
@@ -315,6 +327,7 @@ footer a {
   }
   div.mobile-display h4 {
     background-color: var(--base-color);
+    border-radius: 2px;
     color: hsl(0, 0%, 100%);
     margin-bottom: 8px;
     padding: 16px 24px;
