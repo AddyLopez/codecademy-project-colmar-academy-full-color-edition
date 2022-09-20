@@ -189,12 +189,15 @@ button {
 }
 button a {
   color: hsl(0, 0%, 100%);
+  font-family: "Cairo", sans-serif;
   font-size: 18px;
+  letter-spacing: 0.5px;
 }
 button a:visited {
   color: hsl(0, 0%, 100%);
 }
 button a:hover {
+  cursor: pointer;
   text-decoration: none;
 }
 button:hover {
