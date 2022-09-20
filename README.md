@@ -6,7 +6,7 @@
 
 **_View the original version of this project_**: [https://addylopez.github.io/codecademy-project-colmar-academy/](https://addylopez.github.io/codecademy-project-colmar-academy/)
 
-- GitHub repo to original version: [https://github.com/AddyLopez/codecademy-project-colmar-academy](https://github.com/AddyLopez/codecademy-project-colmar-academy)
+- GitHub repo for original version: [https://github.com/AddyLopez/codecademy-project-colmar-academy](https://github.com/AddyLopez/codecademy-project-colmar-academy)
 
 ## Description
 
