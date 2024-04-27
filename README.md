@@ -44,8 +44,6 @@ Student project for Codecademy.
 
 - Coded in VS Code using professional development workflow tools such as Live Server, GitHub Desktop, and GitHub Pages
 
-- A polished README using Markdown
-
 ## Wireframes
 
 ![Desktop and mobile wireframes for Colmar Academy layout and design](assets/wireframes/colmar-academy-wireframes-spec.png)
